@@ -103,6 +103,21 @@ section.menu {
     font-weight: bold;
 }
 
+@media (max-width: 1000px) {
+    .menu ul li.menu__list__item {
+        display: none;
+    }
+    .menu ul li.menu_email a {
+        display: block;
+    }
+}
+
+@media (max-width: 670px) {
+    .menu ul li.menu_email a {
+        display: none;
+    }
+}
+
 
 /*Sección Title*/
 
@@ -158,6 +173,12 @@ section.title {
 .title div.title__div .title__container ul li a:hover {
     color: rgb(17, 26, 153);
     font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    .title div.title__div .title__container ul li {
+        margin-right: 30px;
+    }
 }
 
 
